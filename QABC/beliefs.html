@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Queen Anne Baptist Church | Beliefs and Values</title>
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<body>
+<div id="leftbar">
+<div>
+<a href="index.html"><canvas id="logo" width="116" height="116"></canvas>
+</a>
+<script>
+var canvas=document.getElementById('logo');
+var ctx=canvas.getContext('2d');
+// Create gradient
+var grd = ctx.createRadialGradient(58,58,5,68,78,70);
+grd.addColorStop(0,"rgb(255,255,210)");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.beginPath();
+ctx.arc(58,58,58,0,2*Math.PI);
+ctx.fill();
+
+ctx.fillStyle='#000000';
+ctx.font = "70px Optima";
+ctx.fillText("q",0,65);
+ctx.font = "57px Optima";
+ctx.fillStyle='rgb(0,15,5)';
+ctx.fillText("a",41,47);
+ctx.font = "70px Optima";
+ctx.fillStyle='rgb(0,30,10)';
+ctx.fillText("b",78,65);
+ctx.font = "15px Optima";
+ctx.fillStyle='#000000';
+ctx.fillText("PLACE",37,63);
+ctx.fillText("to",12,79);
+ctx.font = "17px Optima";
+// Create gradient
+var grd = ctx.createLinearGradient(52,0,100,0);
+grd.addColorStop(0,"black");
+grd.addColorStop(1,"rgb(0,100,50)");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillText("GROW",42,81);
+</script>
+</div>
+
+<!--
+<div id="linklist";>
+<a href="http://qabchurch.org/bellringer">The Bellringer</a>
+<p><a href="http://qabchurch.org/staff">Pastoral Staff</a></p>
+<p><a href="http://qabchurch.org/evergreen">Evergreen NW</a></p>
+<p><a href="http://qabchurch.org/sweetpea">Sweet Pea Cottage</a></p>
+<p><a href="http://qabchurch.org/co-op">Co-op (outreach)</a></p>
+<p><a href="http://qabchurch.org/calendar">Calendar</a></p>
+<p><a href="http://qabchurch.org/media">Media</a></p>
+<a href="http://qabchurch.org/beliefs">Beliefs and Values</a>
+</div>
+-->
+
+<div id="linklist";>
+<a href="bellringer.html">The Bellringer</a>
+<p><a href="pastoral.html">Pastoral Staff</a></p>
+<p><a href="evergreen.html">Evergreen Association</a></p>
+<p><a href="community.html">Community Groups</a></p>
+<p><a href="calendar.html">Calendar</a></p>
+<p><a href="media.html">Media</a></p>
+<a href="beliefs.html">Beliefs and Values</a>
+</div>
+
+<div id="bottomleft";>
+<canvas id="bottom-fade" width="116" height="40"></canvas>
+<script>
+var d = document.getElementById("bottom-fade");
+var ctx = d.getContext("2d");
+var grd = ctx.createLinearGradient(0,40,0,0);
+grd.addColorStop(0,"rgba(255, 255, 255, 0.99)");
+// grd.addColorStop(.5,"rgba(255, 255, 255, 0.06)");
+grd.addColorStop(1,"rgba(255, 255, 255, 0.01)");
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,150,50); 
+</script>
+<img id="logo" src="tree.png" alt="Queen Anne Baptist" width="116" height="190"><div style=padding-left:5px;>11AM, Sundays<br><a href="http://goo.gl/maps/mgQxk" target="_blank">2011 1st Ave N.</a></div>
+</div>
+</div>
+
+<div id="grad1" class="calculated-WxH">
+<div>
+<h1>Beliefs and Values</h1>
+<hr>
+<p>
+<h2>Beliefs</h2>
+<ul>
+<li>We believe that God is good, full of grace, mercy, long suffering and love</li>
+<li>We believe that God's love for the world is expressed by the life, death and resurrection of Jesus Christ, God's only Son.</li>
+<li>We believe that God's love communicated to us through the Holy Spirit empowers us to love God, our neighbors and ourselves.</li>
+</ul>
+</p>
+<p>
+<h2>Values</h2>
+<ul>
+<li>We show God's love to our community by embracing social justice and performing small yet meaningful acts of kindness</li>
+<li>We embrace racial, cultural and generational diversity</li>
+<li>We emphasize the thoughtful, rigorous study of scripture</li>
+<li>We hold to the belief that any and all questions are welcomed by God</li>
+</ul>
+</p>
+</div>
+<div id="grad2">
+<p>queenannebaptistchurch@gmail.com<br>
+(206) 282-7744 | site design by Kjell Hansen</p>
+<div>
+<a href="https://www.facebook.com/QueenAnneBaptist"><img id="facebook" src="official-facebook-logo-tile.png" width="47" height="47"></a>
+<a href="https://twitter.com/QABaptistChurch"><img id="twitter" src="official-twitter-logo-tile.png" width="47" height="47"></a>
+<a href="https://plus.google.com/110142158801630503320/posts"><img id="google_plus" src="official-google-plus-logo-tile.png" width="47" height="47"></a>
+</div>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+.M49copyright { visibility:hidden; display:none; }
+.M49menustyle { visibility:hidden; display:none; }
+
+canvas{display:block;}
+body {margin: 0px; background:white;font-family:Optima,Helvetiva,sans-serif;}
+h1 {text-align:center;background:rgb(150,200,100);}
+a {text-decoration:none;}
+a:link {color:rgb(80,60,30);}      /* unvisited link */
+a:visited {color:rgb(80,155,30);}  /* visited link */
+a:hover {color:rgb(200,255,0);}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+.calculated-WxH {
+    min-height: calc(100% - 76px);
+	 min-width: calc(89% - 124px);
+}​
+.center{position:absolute;top:46px;left:calc(50% - 135px);}
+.span_float 
+{
+float:left;
+font-size:45px;
+line-height:40px;
+font-weight:bold;
+text-align:top;
+}
+#leftbar{
+	position:fixed;padding-left:8px;height:100%;
+}
+#linklist{
+	width:116px;
+}
+#bottomleft{
+    position:fixed;
+	 bottom:0;
+}
+#twitter{
+    position:absolute;
+	 bottom:15px;
+	 right:131px;
+}
+#facebook{
+    position:absolute;
+	 bottom:15px;
+	 right:47px;
+}
+#google_plus{
+    position:absolute;
+	 bottom:15px;
+	 right:215px;
+}
+#grad1
+{
+background: -webkit-linear-gradient(to left, green 75%, green, white); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(to left, green 75%, green, white); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(to left, green 75%, green, white); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to left, green 75%, green, white); /* Standard syntax (must be last) */
+position:absolute;left:124px;padding-left:11%;padding-bottom:76px;
+}
+#grad2
+{
+background: -webkit-linear-gradient(to left, green 75%, green, white); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(to left, green 75%, green, white); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(to left, green 75%, green, white); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to left, rgb(30,10,5) 17%, rgb(150,200,100) 75%, rgb(150,200,100), white); /* Standard syntax (must be last) */
+position:absolute;bottom:0px;left:0px;width:88%;padding-left:12%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Queen Anne Baptist Church</title>
+<link rel="stylesheet" type="text/css" href="default.css">
+<style>
+#crowngrad
+{
+position:absolute;
+top:320px;
+left:calc(50% - 250px);
+height:240px;
+width:500px;
+z-index:-3;
+background: radial-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%);
+}
+#l_curve{
+<!--width:500px;-->
+}
+img{display:block;}
+canvas{display:block;}
+#logo{position:absolute;top:563px;left:calc(50% - 80px);}
+#ground{position:absolute;width:100%;height:calc(100% - 400px);z-index:-4;top:400px;}
+#pews{
+z-index: -6;
+}
+.center{position:absolute;top:46px;left:calc(50% - 135px);}
+</style>
+</head>
+<body style=margin:0;padding:0;background:white;>
+<img id="pews" src="qabc-pews.jpg" alt="Queen Anne Baptist Church" width="100%" height="400";>
+<div class="center">
+<img src="reduced-logo-no-text-no-background.png" alt="Queen Anne Baptist" width="269" height="451">
+</div>
+
+<canvas id="logo" width="174" height="120";"></canvas>
+<script>
+var canvas=document.getElementById('logo');
+var ctx=canvas.getContext('2d');
+ctx.fillStyle='rgb(150,200,100)';
+var grd = ctx.createLinearGradient(0,0,174,0);
+grd.addColorStop(0,"rgb(0,100,50)");
+grd.addColorStop(0.5,"green");
+grd.addColorStop(1,"rgb(100,140,80)");
+ctx.fillStyle = grd;
+ctx.font = "105px Optima"; //70
+ctx.fillText("q",0,85);
+ctx.font = "105px Optima"; //70
+ctx.fillText("b",117,85);
+var grd = ctx.createLinearGradient(52,0,100,0);
+grd.addColorStop(0,"rgb(130,200,80)");
+grd.addColorStop(1,"rgb(0,100,50)");
+ctx.fillStyle = grd;
+ctx.font = "86px Optima";  //57
+ctx.fillText("a",61,57);
+ctx.font = "23px Optima";  //15
+ctx.fillText("PLACE",55,83);
+ctx.fillText("to",17,109);
+ctx.font = "25px Optima";  //17
+ctx.fillText("GROW",64,111);
+</script>
+
+<div id="ground" style="background:rgb(30,10,5)">
+<div style="float:left; padding:20px;">
+<a href="bellringer.html"><h2>Bellringer</h2></a>
+<a href="pastoral.html"><h2>Pastoral Staff</h2></a>
+<a href="evergreen.html"><h2>Evergreen Association</h2></a>
+</div>
+<div style="float:right; padding:20px;">
+<a href="media.html"><h2 style="text-align: right";>Media</h2></a>
+<a href="calendar.html"><h2 style="text-align: right";>Calendar</h2></a>
+<a href="beliefs.html"><h2 style= "text-align: right";>Beliefs and Values</h2></a>
+<a href="community.html"><h2>Community Groups</h2></a>
+</div>
+</div>
+<div id="crowngrad"></div>
+
+
+</body>
+</html>
