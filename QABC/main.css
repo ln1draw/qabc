@@ -1,18 +1,15 @@
- Left nav bar */
 body{
-  width: 85%;
-}
-
-.top-layer{
-  display: inline-block;
   width: 100%;
+  margin: 0px;
+  font-family: Optima,Helvetiva,sans-serif;
 }
 
 .leftbar{
-  width: 18%;
+  width: 23%;
   display: inline-block;
-  margin-left: 15px;
+  margin-right: 15px;
   float: left;
+  position: fixed;
 }
 
 .home-link{
@@ -50,9 +47,32 @@ body{
   font-size: 1.1em;
 }
 
+/* CONTENTS */
+.contents{
+  width: 75%;
+  float: right;
+  display: inline-block;
+  margin-bottom: 90px;
+}
+
+/* FOOTER */
+
 .bottom-nav{
+  float: right;
+  padding-top: 10px;
+  height: 50px;
   position: fixed;
   bottom: 0;
+  background-color: rgba(150, 200, 100, 0.9);
+  width: 100%;
+  margin: 0px;
+}
+
+.contact{
+  width: 20%;
+  display: inline-block;
+  float: left;
+  text-align: center;
 }
 
 .bottom-logo{
@@ -66,30 +86,17 @@ body{
   margin-bottom: 10px;
 }
 
-.contact{
-  margin: 25px auto;
-  text-align: center;
-}
-
 .service-times{
   display: block; 
 }
 
-/* CONTENTS */
-.body{
-  width: 80%;
-  display: inline-block;
+.details{
+  margin-top: 12px;
 }
 
-/* FOOTER */
-.bottom-nav{
-  float: right;
-  width: 80%;
-  padding-top: 10px;
-  margin-left: 20%;
-  display: block;
-  height: 50px;
-  margin-bottom: 10px;
+.social-img{
+  height: 47px;
+  width: 47px;
 }
 
 /* BEGINNING OF OLD STYLING */
@@ -97,7 +104,6 @@ body{
 .M49menustyle { visibility:hidden; display:none; }
 
 canvas{display:block;}
-body {margin: 0px; background:white;font-family:Optima,Helvetiva,sans-serif;}
 h1 {text-align:center;background:rgb(150,200,100);}
 a {text-decoration:none;}
 a:link {color:rgb(80,60,30);}      /* unvisited link */
@@ -118,9 +124,6 @@ line-height:40px;
 font-weight:bold;
 text-align:top;
 }
-#leftbar{
-	position:fixed;padding-left:8px;height:100%;
-}
 #linklist{
 	width:116px;
 }
@@ -130,17 +133,17 @@ text-align:top;
 }
 #twitter{
     position:absolute;
-	 bottom:15px;
+	 bottom:6px;
 	 right:131px;
 }
 #facebook{
     position:absolute;
-	 bottom:15px;
+	 bottom:6px;
 	 right:47px;
 }
 #google_plus{
     position:absolute;
-	 bottom:15px;
+	 bottom:6px;
 	 right:215px;
 }
 #grad1
@@ -160,4 +163,161 @@ background: linear-gradient(to left, rgb(30,10,5) 17%, rgb(150,200,100) 75%, rgb
 position:absolute;bottom:0px;left:0px;width:88%;padding-left:12%;
 }
 
-/* END OF LEGACY CODE 
+/* END OF LEGACY CODE */
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 980px) {
+  .logo-text {
+    width: 150px;
+    margin-left: 45px;
+  }
+}
+
+@media screen and (max-width: 847px) {
+  .leftbar {
+    position: relative;
+    margin-right: 0px;
+  }
+
+  .logo-link {
+    margin-left: 20px;
+  }
+
+  .logo-text {
+    margin-left: 5px;
+  }
+
+  .links {
+    padding-left: 5px;
+  }
+
+  .contents {
+    margin-bottom: 100px;
+  }
+
+  .bottom-nav {
+    height: 100px;
+  }
+
+  .contact {
+    width: 235px;
+    margin-left: 4%;
+    margin-top: 15px;
+  }
+
+  .service-times {
+    display: inline-block;
+    float: left;
+  }
+
+  .contact a {
+    float: right;
+  }
+
+  .details {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .social-media {
+    position: relative;
+    width: 41%;
+    float: right;
+    height: 50px;
+  }
+
+  .social-img {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .leftbar {
+    display: block;
+    width: 100%;
+    height: 133px;
+  }
+
+  .contents {
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .home-link {
+    display: inline-block;
+    margin: 0px;
+    width: 116px;
+    height: 116px;
+    margin-top: 25px;
+  }
+
+  .logo-link {
+    margin: 0px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .links {
+    float: right;
+    display: inline-block;
+    width: 279px;
+    top: 0px;
+    position: absolute;
+    left: 116px;
+  }
+
+  .links li {
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  .bottom-logo {
+    display: none;
+  }
+
+  .bottom-nav {
+    position: relative;
+    height: 150px;
+  }
+
+  .contact {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .details {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .social-media {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #google_plus {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  #twitter {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  #facebook {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+  }
+}

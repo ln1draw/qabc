@@ -1,0 +1,26 @@
+.staff-frame{
+  background-color: rgb(150,200,100);
+  color: rgb(30,10,5);
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  width: 310px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reverend-sean{
+  border: 5px solid rgb(30,10,5);
+  display: inline-block;
+  width: 300px;
+}
+
+.lenny{
+  border: 5px solid rgb(30,10,5);
+  display: inline-block;
+}
+
+.kerry{
+  border: 5px solid rgb(30,10,5);
+  display: inline-block;
+}

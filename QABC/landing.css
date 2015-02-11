@@ -1,0 +1,192 @@
+body {
+  margin: 0px auto;
+  padding: 0px auto;
+  background: white;
+}
+
+#crowngrad {
+  position: absolute;
+  top: 320px;
+  left: calc(50% - 250px);
+  height: 240px;
+  width: 500px;
+  z-index: -3;
+  background: radial-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%);
+}
+
+img {
+  display: block;
+}
+
+canvas {
+  display: block;
+}
+
+#logo {
+  position: absolute;
+  top: 563px;
+  left: calc(50% - 80px);
+  width: 174px;
+  height: 120px;
+}
+
+.pic-wrapper {
+  background-color: rgb(150, 200, 100);
+}
+
+.pew-wrapper{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#pews {
+  z-index: -6;
+  width: 90%;
+  margin: 0px auto;
+  border: 5px solid rgb(30,10,5);
+}
+
+.center {
+  position: absolute;
+  top: 46px;
+  left: calc(50% - 135px);
+}
+
+.center img {
+  width: 269px;
+  height: 451px;
+  position: absolute;
+  top: 250px;
+}
+
+.header-wrapper {
+  background-color: rgb(30,10,5);
+  height: 100px;
+}
+
+h1 {
+  color: rgb(185, 190, 165);
+  margin: 0px auto;
+  padding-top: 30px;
+  background-color: rgb(30,10,5);
+}
+
+.link-box {
+  width: 100%;
+}
+
+.links {
+  display: block;
+  border: 6px solid rgb(30, 10, 5);
+  min-height: 300px;
+  top: 0px;
+}
+
+ul {
+  padding: 20px;
+  width: 46%;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.links li {
+  padding-bottom: 15px;
+  margin-left: 88px;
+}
+
+.left-links {
+  float: left;
+}
+
+.right-links {
+  float: right;
+}
+
+.contents {
+  width: 90%;
+  margin: 0px auto;
+  margin-right: 5%;
+}
+
+.welcome p {
+  margin-left: 45px;
+  font-size: 18px;
+}
+
+.upcoming-events {
+  margin-top: 50px;
+}
+
+.upcoming-events ul {
+  margin-top: 0px;
+  padding: 0px;
+  margin-left: 45px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1170px) {
+  .center img{
+    width: 136px;
+    height: 225px;
+    top: 375px;
+    left: 45px;
+  }
+}
+
+@media screen and (max-width: 1012px) {
+  .links ul {
+    width: 40%;
+  }
+
+  .center img {
+    top: 280px;
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .left-links li {
+    margin-left: 10px;
+  }
+
+  .center img {
+    top: 190px;
+    left: 55px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .links ul {
+    font-size: 20px;
+  }
+
+  .center img {
+    width: 98px;
+    height: 156px;
+    top: 150px;
+    left: 79px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .links {
+    width: 96%;
+    position: relative;
+    left: 0px;
+    text-align: center;
+    margin-left: 10px;
+    height: 130px;
+    min-height: 0px;
+  }
+
+  .links ul {
+    width: 40%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .links ul li {
+    margin: 2px;
+    padding: 2px;
+  }
+}
