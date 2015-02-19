@@ -21,7 +21,8 @@ body{
 
 .logo-link{
   display: block;
-  margin-left: 60px;
+  margin-left: 65px;
+  /*margin-left: 60px;*/
   margin-top: 30px;
   position: absolute;
 }
@@ -87,7 +88,7 @@ body{
 }
 
 .service-times{
-  display: block; 
+  display: block;
 }
 
 .details{
@@ -116,7 +117,7 @@ a:active {color:#0000FF;}  /* selected link */
 	 min-width: calc(89% - 124px);
 }​
 .center{position:absolute;top:46px;left:calc(50% - 135px);}
-.span_float 
+.span_float
 {
 float:left;
 font-size:45px;
